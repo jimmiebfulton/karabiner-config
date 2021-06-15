@@ -1,0 +1,40 @@
+{
+    "title": "Emacs Mappings",
+    "rules": [
+	{
+	    "description": "Change Left Command to Left Control in Emacs App",
+	    "manipulators": [
+		// {
+		//     "type": "basic",
+		//     "from": {
+		// 	"key_code": "left_command"			
+		//     }
+		//     "to": [
+		// 	{
+		// 	    "key_code": "control"
+		// 	}
+		//     ]
+		//     "conditions": [
+		// 	{
+		// 	    "type": "frontmost_application_if",
+		// 	    "bundle_identifiers": [
+		// 		"^org\\.gnu\\.Emacs$"
+		// 	    ]
+		// 	},
+			
+		// 	{
+		// 	    "type": "defice_if",
+		// 	    "identifiers": [
+		// 		{
+		// 		    "description": "Kinesis",
+		// 		    "product_id": 305,
+		// 		    "vendor_id": 2539
+		// 		}
+		// 	    ]
+		// 	}
+		//     ]
+		// }
+	    ]
+	}
+    ]
+}

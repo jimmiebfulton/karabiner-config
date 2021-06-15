@@ -1,0 +1,37 @@
+{
+  "title": "Emacs Mappings",
+  "rules": [
+    {
+      "description":"Remap Command to Control in Emacs on Kinesis",
+      "manipulators":[
+        {
+          "type":"basic",
+          "from":{
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            },
+	    {
+	        "type": "device_if",
+		"identifiers": [
+		    {
+			"vendor_id": 2539 
+		    }
+	      ]
+	    }
+          ]
+        }
+      ]
+    }
+  ]
+}
